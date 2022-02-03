@@ -6,18 +6,14 @@ function solution(answers) {
   let num3 = [3,3,1,1,2,2,4,4,5,5];
   let point = [0,0,0];
 
-  let stu1 = Array.from(new Array(answers.length), (x,i) => num1[i%5]);
-  let stu2 = Array.from(new Array(answers.length), (x,i) => num2[i%8]);
-  let stu3 = Array.from(new Array(answers.length), (x,i) => num3[i%10]);
-
   for (let i in answers) {
-    if(stu1[i] === answers[i]) {
+    if(num1[i%5] === answers[i]) {
       point[0]++;
     }
-    if(stu2[i] === answers[i]) {
+    if(num2[i%8] === answers[i]) {
       point[1]++;
     }
-    if(stu3[i] === answer[i]) {
+    if(num3[i%10] === answers[i]) {
       point[2]++;
     }
   }
