@@ -11,3 +11,4 @@ var isPalindrome = function(x) {
 let x =-111;
 isPalindrome(x);
 
+//4라인 .toString을 하지않으면 다 false로 출력
