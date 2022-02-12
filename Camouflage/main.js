@@ -1,6 +1,5 @@
 function solution(clothes) {
   var answer = 1;
-
   let com = new Map();
   for (let i of clothes) {
     if (com.has(i[1])) {
@@ -8,13 +7,11 @@ function solution(clothes) {
     } else {
       com.set(i[1],1);
     }
-    console.log(`i : ${i[1]}, map : ${com}`);
   }
   for (let [value, key] of com) {
     answer *= key + 1;
   }
   answer -= 1;
-  console.log(answer);
   return answer;
 }
 
