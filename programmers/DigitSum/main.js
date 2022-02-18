@@ -4,7 +4,6 @@ function solution(n)
 
     let arr = [];
     arr = (n + '').split('');
-    console.log(arr);
     for (let i = 0; i < arr.length; i++) {
       answer += parseInt(arr[i]);
     }
